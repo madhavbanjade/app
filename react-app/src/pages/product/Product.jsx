@@ -8,8 +8,6 @@ import Category from "./Category";
 const Product = () => {
   return (
     <div className="relative min-h-fit ">
-      {/* <Nav /> */}
-      {/* Header Section */}
       <div className="absolute font-ribeye flex flex-col items-center top-12 md:left-80 left-20 lg:left-[40%] text-white z-10">
         <h1 className="text-3xl">Product</h1>
         <button className="mt-8 flex space-x-4">
@@ -25,14 +23,12 @@ const Product = () => {
         </button>
       </div>
 
-      {/* Background Image */}
       <img
         src="/contact-bg.png"
         alt="About-us"
         className="h-60 w-full object-cover"
       />
 
-      {/* Description Section */}
       <div className="p-4 text-center text-md mt-4 lg:mt-8">
         <p>
           Good Life Food Product had created its Brand with the name of{" "}

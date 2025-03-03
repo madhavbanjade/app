@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { IoHomeOutline } from "react-icons/io5";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
-import Nav from "../components/header/nav";
 
 const About = () => {
   const [productPopUp, setProductPopUp] = useState(false);

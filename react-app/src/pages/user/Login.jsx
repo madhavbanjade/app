@@ -1,9 +1,9 @@
-import React, { useContext, useState } from "react";
+import React, {  useState } from "react";
 import { IoHomeOutline } from "react-icons/io5";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../../store/auth";
 import { baseurl } from "../../urls";
+import { useAuth } from "../../store/auth";
 
 const Login = () => {
   const [user, setUser] = useState({
@@ -36,8 +36,8 @@ const Login = () => {
         storeTokenInLs(data.token);
         setUser("");
         Navigate("/");
-        localStorage.setItem("token", result.token); // ✅ Save token to localStorage
-        console.log("Token:", result.token); // ✅ Log token
+        localStorage.setItem("token", result.token); 
+        console.log("Token:", result.token); 
         setAlertMessage("✅ Login Successful");
       }
     } catch (error) {

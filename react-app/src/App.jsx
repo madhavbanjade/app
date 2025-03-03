@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Aos from "aos";
-import "aos/dist/aos.css"; // Import AOS CSS
+import "aos/dist/aos.css"; 
 import Layout from "./Layout.jsx";
 import Home from "./pages/Home.jsx";
 import Contact from "./pages/Contact.jsx";
@@ -39,9 +39,9 @@ const router = createBrowserRouter(
 const App = () => {
   useEffect(() => {
     Aos.init({
-      duration: 1000, // Animation duration
-      easing: "ease-in-out", // Animation easing
-      once: false, // Whether animation should happen only once
+      duration: 1000, 
+      easing: "ease-in-out", 
+      once: false, 
     });
   }, []);
 

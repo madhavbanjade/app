@@ -22,7 +22,6 @@ const Register = () => {
 
     try {
       let response = await fetch(`${baseurl}/api/signup`, {
-        //``${baseurl}/`
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -71,7 +70,6 @@ const Register = () => {
           Sign-Up
         </h1>
 
-        {/* Showing alert message  */}
         {alert && (
           <div
             className={`${

@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 import { TbDeviceLandlinePhone } from "react-icons/tb";
 import { MdLocationOn } from "react-icons/md";
 import { CgMailOpen } from "react-icons/cg";
-import Nav from "./Nav";
+import Nav from "./Nav.jsx";
 
 const Header = () => {
   return (

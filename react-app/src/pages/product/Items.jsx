@@ -9,7 +9,6 @@ const Items = () => {
 
   return (
     <div className="relative min-h-fit">
-      {/* Page Header */}
       <div className="absolute font-ribeye flex flex-col items-center top-12 md:left-80 left-20 lg:left-[40%] text-white z-10">
         <h1 className="text-3xl">Items</h1>
         <button className="mt-8 flex space-x-4">
@@ -25,16 +24,13 @@ const Items = () => {
         </button>
       </div>
 
-      {/* Background Image */}
       <img
         src="/contact-bg.png"
         alt="About-us"
         className="h-60 w-full object-cover"
       />
 
-      {/* Image & Description Row */}
       <div className="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8 p-6">
-        {/* Image Section */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <img
             src="/digestive.png"
@@ -43,7 +39,6 @@ const Items = () => {
           />
         </div>
 
-        {/* Product Description */}
         <div className=" p-6 w-full lg:w-1/2 rounded-lg">
           <h1 className="text-xlfont-semibold">Butter Pride</h1>
           <div className="flex space-x-6  mt-2">
@@ -86,7 +81,6 @@ const Items = () => {
             </select>
           </div>
 
-          {/* Add to Cart Button */}
           <div className="flex mt-6 justify-center">
             <button
               className="bg-red-600 text-white flex items-center space-x-2 px-6 py-3 rounded-full shadow-md hover:bg-red-700 transition"

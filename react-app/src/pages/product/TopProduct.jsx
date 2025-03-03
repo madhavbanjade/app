@@ -34,7 +34,7 @@ const CustomNextArrow = (props) => {
 const TopProduct = () => {
   const products = [
     {
-      image: "/digestive.png", // Ensure this path is correct
+      image: "/digestive.png", 
       title: "Golden Aaja",
       description: "",
     },
@@ -60,32 +60,31 @@ const TopProduct = () => {
     },
   ];
 
-  // Slider Settings
   const settings = {
-    dots: true, // Show dots for navigation
-    infinite: true, // Infinite looping
-    speed: 500, // Transition speed
-    slidesToShow: 5, // Number of slides to show at once
-    slidesToScroll: 1, // Number of slides to scroll
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 2000, // Autoplay speed in milliseconds
+    dots: true, 
+    infinite: true, 
+    speed: 500, 
+    slidesToShow: 5, 
+    slidesToScroll: 1, 
+    autoplay: true, 
+    autoplaySpeed: 2000, 
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
     responsive: [
       {
-        breakpoint: 1024, // Adjust for smaller screens (e.g., tablets)
+        breakpoint: 1024, 
         settings: {
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 768, // Adjust for even smaller screens (e.g., large phones)
+        breakpoint: 768, 
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 480, // Adjust for mobile screens
+        breakpoint: 480,
         settings: {
           slidesToShow: 2,
         },
@@ -95,12 +94,11 @@ const TopProduct = () => {
 
   return (
     <div className="w-full p-4 md:p-8 flex flex-col justify-center items-center">
-      {/* Heading */}
+    
       <h1 className="text-[#e53424] text-xl md:text-2xl font-bold text-center">
         Top Products
       </h1>
 
-      {/* Buttons */}
       <div className="flex flex-wrap justify-center gap-2 md:gap-4 mt-4 md:mt-6 text-white">
         <button className="bg-[#e53424] w-24 md:w-32 p-2 rounded-2xl hover:bg-black transition-colors">
           Featured
@@ -113,7 +111,6 @@ const TopProduct = () => {
         </button>
       </div>
 
-      {/* Slider Container */}
       <div className="w-full  mt-6 md:mt-8 mb-8 md:mb-12 px-2 md:px-4">
         <Slider {...settings}>
           {products.map((product, index) => (
