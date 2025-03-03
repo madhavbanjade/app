@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ribeye+Marrow&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+    body {
+      @apply font-sans;
+    }
+  } */
+  
+  .slide{
+    @apply transition-all duration-300 ease-in-out;
+  }
+  .header-nav{
+    z-index: 999;
+  }
