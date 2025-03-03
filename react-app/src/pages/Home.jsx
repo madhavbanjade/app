@@ -6,9 +6,9 @@ import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import TopProduct from "./product/TopProduct";
 import About from "./About";
-import Nav from "../components/header/nav";
 
-//custom Previous arrow components
+
+
 const CustomPrevArrow = (props) => {
   const { onClick } = props;
   return (
@@ -34,7 +34,7 @@ const CustomPrevArrow = (props) => {
   );
 };
 
-//custom next arrow
+
 const CustomNextArrow = (props) => {
   const { onClick } = props;
   return (
