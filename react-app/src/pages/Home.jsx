@@ -7,8 +7,6 @@ import { Link } from "react-router-dom";
 import TopProduct from "./product/TopProduct";
 import About from "./About";
 
-
-
 const CustomPrevArrow = (props) => {
   const { onClick } = props;
   return (
@@ -33,7 +31,6 @@ const CustomPrevArrow = (props) => {
     </div>
   );
 };
-
 
 const CustomNextArrow = (props) => {
   const { onClick } = props;

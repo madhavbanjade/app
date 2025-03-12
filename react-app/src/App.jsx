@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Aos from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
 import Layout from "./Layout.jsx";
 import Home from "./pages/Home.jsx";
 import Contact from "./pages/Contact.jsx";
@@ -16,8 +16,8 @@ import Product from "./pages/product/Product.jsx";
 import Register from "./pages/user/Register.jsx";
 import Login from "./pages/user/Login.jsx";
 import VerifyUser from "./pages/user/VerifyUser.jsx";
-import Category from "./pages/product/Category.jsx";
-import Items from "./pages/product/Items.jsx";
+import Items from "./components/Items.jsx";
+import Cart from "./components/Cart.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,8 +30,11 @@ const router = createBrowserRouter(
       <Route path="register" element={<Register />} />
       <Route path="verify-user" element={<VerifyUser />} />
       <Route path="login" element={<Login />} />
-      <Route path="categories" element={<Category />}></Route>
-      <Route path="category/items" element={<Items />}></Route>
+
+      {/* for cart purpose  */}
+      <Route path="/product" element={<Product />} />
+      <Route path="product/items/:id" element={<Items />} />
+      <Route path="product/items/cart" element={<Cart />} />
     </Route>
   )
 );
@@ -39,9 +42,9 @@ const router = createBrowserRouter(
 const App = () => {
   useEffect(() => {
     Aos.init({
-      duration: 1000, 
-      easing: "ease-in-out", 
-      once: false, 
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false,
     });
   }, []);
 

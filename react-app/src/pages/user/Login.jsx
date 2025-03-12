@@ -3,7 +3,6 @@ import { IoHomeOutline } from "react-icons/io5";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
 import { baseurl } from "../../urls";
-import { useAuth } from "../../store/auth";
 
 const Login = () => {
   const [user, setUser] = useState({
