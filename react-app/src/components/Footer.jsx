@@ -87,10 +87,9 @@ const Footer = () => {
             }`}
           >
             <ul className="mt-4 flex flex-col space-y-2 p-4">
-              <li>Brand 1</li>
-              <li>Brand 2</li>
-              <li>Brand 3</li>
-              <li>Brand 4</li>
+              <li>Nebico Biscuits</li>
+              <li>Sudur Biscuits</li>
+              <li>Kwality Biscuits</li>
             </ul>
           </div>
         </div>
@@ -117,10 +116,9 @@ const Footer = () => {
             }`}
           >
             <ul className="mt-4 flex flex-col space-y-2 p-4">
-              <li>Info 1</li>
-              <li>Info 2</li>
-              <li>Info 3</li>
-              <li>Info 4</li>
+              <li>Founded in 1964</li>
+              <li>Far western region in Nepal</li>
+              <li>Kabra Group</li>
             </ul>
           </div>
         </div>

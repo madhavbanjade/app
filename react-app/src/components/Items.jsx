@@ -9,23 +9,24 @@ import { addItem } from "../features/cart/cartSlice";
 const products = [
   {
     id: 1,
-    name: "Golden Aaja",
-    brand: "Digestive",
+    name: "Britannia Milk Bikis",
+    brand: "Britannia",
     code: "P001",
-    description: "The ultimate taste of cookies.",
-    image: "/digestive.png",
+    description:
+      "A favorite among children and adults, these biscuits are known for their creamy milk flavor.",
+    image: "/britannia.webp",
     price: 10,
-    isAvilable: true,
   },
   {
     id: 2,
-    name: "Coconut",
-    brand: "Normal",
+    name: "Tasty-Tasty Biscuits",
+    brand: "Kwality Biscuits",
     code: "P002",
-    description: "The best of the best.",
-    image: "/coconut-medium.png",
+    description:
+      " Manufactured by Kwality Nepal, these are Nepal’s first tea-time salt and sweet biscuits with added glucose and milk for nutrition",
+
+    image: "/tasty-tasty.webp",
     price: 20,
-    isAvilable: true,
   },
 ];
 

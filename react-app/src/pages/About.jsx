@@ -18,8 +18,12 @@ const About = () => {
             <Link to="/about-us//" className="mt-1">
               <MdKeyboardDoubleArrowRight className="text-xl" />
             </Link>
-            <Link to="/" className="text-2xl">
-              Company Profile
+            <Link to="/about-us" className="text-2xl">
+              About-us
+            </Link>
+            <MdKeyboardDoubleArrowRight className="text-xl mt-2" />
+            <Link to="/about-us" className="text-2xl">
+              About-Company
             </Link>
           </button>
         </div>

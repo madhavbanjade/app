@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import TopProduct from "./product/TopProduct";
-import About from "./About";
 
 const CustomPrevArrow = (props) => {
   const { onClick } = props;
@@ -36,7 +35,7 @@ const CustomNextArrow = (props) => {
   const { onClick } = props;
   return (
     <div
-      className="absolute right-4 z-10 top-1/2 transform -translate-y-1/2 cursor-pointer bg-red-500 p-2 rounded-full"
+      className="absolute right-4 z-10 top-1/2 transform -translate-y-1/2 cursor-pointer bg-red-500  p-2 rounded-full"
       onClick={onClick}
     >
       <svg

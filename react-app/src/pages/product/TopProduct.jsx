@@ -22,9 +22,9 @@ const CustomNextArrow = (props) => {
   return (
     <div
       onClick={onClick}
-      className="absolute bg-red-500 right-4 top-1/2 transform -translate-y-1/2 cursor-pointer rounded-full p-2  "
+      className="absolute bg-red-500  right-4 top-1/2 transform -translate-y-1/2 cursor-pointer rounded-full p-2  "
     >
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6">
         <path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" />
       </svg>
     </div>
@@ -34,51 +34,44 @@ const CustomNextArrow = (props) => {
 const TopProduct = () => {
   const products = [
     {
-      image: "/digestive.png", 
-      title: "Golden Aaja",
-      description: "",
+      image: "/nabico.webp",
+      title: "Nebico Biscuits",
+      description:
+        "Founded in 1964, Nebico Private Limited is one of the pioneer biscuits industry in Nepal. The factory where Nebico Biscuits are produced and manufactured is in the busy Balaju Industrial District in Balaju.",
     },
     {
-      image: "/butter-pride-small.png",
-      title: "Butter Pride",
-      description: "",
+      image: "/sudur.webp",
+      title: "Sudur Biscuits",
+      description:
+        "Sudur Biscuits is specially made from the far western region in Nepal. Sudur Biscuits company has made a name for itself in the Nepalese market for providing rich and quality biscuits.",
     },
     {
-      image: "/diet-digestive.png",
-      title: "Diet Digestive",
-      description: "",
-    },
-    {
-      image: "/coconut-medium.png",
-      title: "Coconut Krunch",
-      description: "",
-    },
-    {
-      image: "/digestive.png",
-      title: "Golden Aaja",
-      description: "",
+      image: "/kwality.webp",
+      title: "Kwality Biscuits",
+      description:
+        "Kwality Biscuits is manufactured by Kabra Group. The company was established in 1985. Kabra Group has been Nepal’s top manufacturer of biscuits for over 35 years.",
     },
   ];
 
   const settings = {
-    dots: true, 
-    infinite: true, 
-    speed: 500, 
-    slidesToShow: 5, 
-    slidesToScroll: 1, 
-    autoplay: true, 
-    autoplaySpeed: 2000, 
-    prevArrow: <CustomPrevArrow />,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: <CustomPrevArrow  />,
     nextArrow: <CustomNextArrow />,
     responsive: [
       {
-        breakpoint: 1024, 
+        breakpoint: 1024,
         settings: {
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 768, 
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
         },
@@ -94,20 +87,19 @@ const TopProduct = () => {
 
   return (
     <div className="w-full p-4 md:p-8 flex flex-col justify-center items-center">
-    
       <h1 className="text-[#e53424] text-xl md:text-2xl font-bold text-center">
         Top Products
       </h1>
 
       <div className="flex flex-wrap justify-center gap-2 md:gap-4 mt-4 md:mt-6 text-white">
         <button className="bg-[#e53424] w-24 md:w-32 p-2 rounded-2xl hover:bg-black transition-colors">
-          Featured
+          Nebico Biscuits
         </button>
         <button className="bg-[#e53424] w-24 md:w-32 p-2 rounded-2xl hover:bg-black transition-colors">
-          Golden
+          Sudur Biscuits
         </button>
-        <button className="bg-[#e53424] w-24 md:w-32 p-2 rounded-2xl hover:bg-black transition-colors">
-          Adguri
+        <button className="bg-[#e53424] w-24 md:w-40 p-2 rounded-2xl hover:bg-black transition-colors">
+          Kwality Biscuits
         </button>
       </div>
 

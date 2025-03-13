@@ -5,30 +5,34 @@ import Slider from "react-slick";
 const NewArrival = () => {
   const products = [
     {
-      title: "Product 1",
+      title: "Coconut",
       description:
         "This is a high-quality product designed to meet your needs.",
-      image: "/chocolate-cookies-on-rustic-wooden-background.webp",
+      image: "/coconut-medium.png",
     },
     {
-      title: "Product 2",
-      description: "Experience the superior design and unmatched quality.",
-      image: "/chocolate-cookies-on-rustic-wooden-background.webp",
+      title: "Parle-G ",
+      description:
+        " A popular brand in Nepal, known for its classic taste and affordability.",
+      image: "/parle-g.webp",
     },
     {
-      title: "Product 3",
-      description: "Get the best value with this exceptional product.",
-      image: "/chocolate-cookies-on-rustic-wooden-background.webp",
+      title: "Britannia Milk Bikis",
+      description:
+        " A favorite among children and adults, these biscuits are known for their creamy milk flavor.",
+      image: "/britannia.webp",
     },
     {
-      title: "Product 4",
-      description: "Crafted with precision for your everyday use.",
-      image: "/chocolate-cookies-on-rustic-wooden-background.webp",
+      title: "Tasty-Tasty Biscuits",
+      description:
+        " Manufactured by Kwality Nepal, these are Nepal’s first tea-time salt and sweet biscuits with added glucose and milk for nutrition",
+      image: "/tasty-tasty.webp",
     },
     {
-      title: "Product 5",
-      description: "Innovation meets excellence in this fantastic product.",
-      image: "/chocolate-cookies-on-rustic-wooden-background.webp",
+      title: "Oreo Chocolate Cream Biscuits",
+      description:
+        ": Known for their rich chocolate filling and crispy biscuit base, a favorite for indulgence.",
+      image: "/oreo.webp",
     },
   ];
 

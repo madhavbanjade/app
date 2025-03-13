@@ -12,7 +12,6 @@ const Login = () => {
   const [alertMessage, setAlertMessage] = useState("");
   const Navigate = useNavigate();
 
-  const { storeTokenInLs } = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -57,8 +56,7 @@ const Login = () => {
               <MdKeyboardDoubleArrowRight className="text-xl" />
             </Link>
             <Link to="/" className="text-xl">
-              Login
-            </Link>
+              Sign-In         </Link>
           </button>
         </div>
         <img

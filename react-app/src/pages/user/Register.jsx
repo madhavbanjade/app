@@ -54,7 +54,7 @@ const Register = () => {
               <MdKeyboardDoubleArrowRight className="text-xl" />
             </Link>
             <Link to="/" className="text-xl">
-              Register
+              Sign-Up
             </Link>
           </button>
         </div>

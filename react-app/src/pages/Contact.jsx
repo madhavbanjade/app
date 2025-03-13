@@ -54,8 +54,7 @@ const Contact = ({ user }) => {
             <span>
               <h1 className="text-xl font-semibold">Head Office</h1>
               <p className="text-sm text-[#666666]">
-                Latitpur-17 Kathmandu,Nepal <br /> Email:
-                info@mdhavbanjade.com.np
+              Nepal <br /> Email: info@mdhavbanjade.com.np
               </p>
             </span>
             <span>
@@ -67,7 +66,7 @@ const Contact = ({ user }) => {
             <span>
               <h1 className="text-xl font-semibold">Factory</h1>
               <p className="text-sm text-[#666666]">
-                Goodlife Food Products <br /> Lalitpur, Nepal{" "}
+                Goodlife Food Products <br /> Nepal{" "}
               </p>
             </span>
             <span>
