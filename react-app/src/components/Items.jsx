@@ -4,7 +4,6 @@ import { IoHomeOutline } from "react-icons/io5";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { addItem } from "../features/cart/cartSlice";
 
 const products = [
   {

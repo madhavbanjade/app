@@ -85,7 +85,6 @@ const Product = () => {
               <p className="text-gray-600 mb-4">{product.description}</p>
               <button
                 className="text-start underline text-blue-600 w-full"
-                onClick={() => navigate(`/product/items/${product.id}`)}
               >
                 Learn More
               </button>

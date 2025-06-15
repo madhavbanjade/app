@@ -15,7 +15,6 @@ import Market from "./pages/Market.jsx";
 import Product from "./pages/product/Product.jsx";
 import Register from "./pages/user/Register.jsx";
 import Login from "./pages/user/Login.jsx";
-import VerifyUser from "./pages/user/VerifyUser.jsx";
 import Items from "./components/Items.jsx";
 import Cart from "./components/Cart.jsx";
 
@@ -28,7 +27,6 @@ const router = createBrowserRouter(
       <Route path="market" element={<Market />} />
       <Route path="product" element={<Product />} />
       <Route path="register" element={<Register />} />
-      <Route path="verify-user" element={<VerifyUser />} />
       <Route path="login" element={<Login />} />
 
       {/* for cart purpose  */}

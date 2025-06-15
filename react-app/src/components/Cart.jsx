@@ -3,11 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { IoHomeOutline } from "react-icons/io5";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
-import {
-  removeItem,
-  incrementQuantity,
-  decrementQuantity,
-} from "../features/cart/cartSlice";
 
 const Cart = () => {
   const dispatch = useDispatch();

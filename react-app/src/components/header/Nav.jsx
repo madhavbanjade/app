@@ -4,8 +4,6 @@ import { IoCloseCircle } from "react-icons/io5";
 import { MdArrowDropDown } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { button } from "framer-motion/client";
-import Header from "./Header";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -222,12 +220,37 @@ const Nav = () => {
               )}
             </button>
 
-            <button
-              onClick={() => {
-                navigate("/addtocart");
-              }}
-            >
+            <button onClick={() => handleDropDown("cart")}>
               <FaShoppingCart className="text-xl text-[#e53424] hover:text-black" />
+              {openDropDown === "cart" && (
+                <div
+                  className="absolute  p-4 right-8 z-10 flex flex-col bg-white border border-gray-200 shadow-lg mt-6 border-t-[#e53424] 
+                "
+                >
+                  <div>
+                    <img
+                      src="/coconut-medium.png"
+                      alt="Adguri"
+                      className="object-contain w-40 h-20"
+                    />
+                    <h1>Adguri</h1>
+                  </div>
+                  <div>
+                    <img
+                      src="/diet-digestive.png"
+                      alt="Coconut"
+                      className="object-contain w-40 h-20"
+                    />
+                    <h1>Coconut</h1>
+                  </div>
+                  <button
+                    onClick={() => navigate("product/items/cart")}
+                    className="p-4 mt-4 flex items-center justify-center rounded bg-red-600 text-white"
+                  >
+                    View Cart
+                  </button>
+                </div>
+              )}
             </button>
           </div>
         </nav>
